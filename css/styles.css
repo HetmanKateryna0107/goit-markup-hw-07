@@ -248,19 +248,61 @@ line-height: 0;
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/icons/people-office.jpg);
-    
+    url(../images/mobile/people-office-mob.jpg);
+min-width: 480px;
   background-size: cover;
   text-align: center;
   background-color: var(--dark-color);
   margin-left: auto;
   margin-right: auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  /* padding-top: 188px;
+  padding-bottom: 188px; */
   padding-left: 0;
   padding-right: 0;
   max-width: 1440px;
 }
+/* @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: url('photo@2x.png');
+  }
+} */
+
+
+
+
+@media screen and (min-width:481px) {
+  .hero-color {
+    min-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet/people-office-tabl.jpg);
+}
+}
+@media screen and (min-width:768px) {
+  .hero-color {
+    min-width: 1600px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet/people-office-tabl.jpg);
+    }
+  }
+  @media screen and (min-width:769px) {
+    .hero-color {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/icons/people-office.jpg);}}
+
+
 .main-title {
   font-family: "Roboto", "sens-serif";
   font-weight: 700;
@@ -972,7 +1014,7 @@ line-height: 0;
     align-items: center;
   }
   .main-title { 
-     max-width: 496px;
+     min-width: 496px;
     }
   .page-nav {
     display: flex;
@@ -1067,7 +1109,7 @@ line-height: 0;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--subtle-text-color);
-    max-width: 496px;
+    min-width: 496px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1132,6 +1174,14 @@ line-height: 0;
  
 }
 
+/* 
+.hero-color {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/icons/people-office.jpg);
+} */
 .page-header {
   display: flex;
   align-items: center;
