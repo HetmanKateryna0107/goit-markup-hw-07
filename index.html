@@ -64,28 +64,18 @@
           </ul>
         </address>
       </div>
-      <!-- <div class="">
-                 <button type="button" class="modal-clase-btn" data-modal-close>
-          <svg class="modal-close-btn-icon">
-            <use
-              href="./images/sprite.svg#icon-close-btn"
-              width="8"
-              hight="8"
-            ></use>
-          </svg>
-        </button> 
-        <ul>
-          <li class="list-menu-nav">Studio</li>
-          <li class="list-menu-nav">Portfolio</li>
-          <li class="list-menu-nav">Contacts</li>
-        </ul>
-
-        <ul class="">
-          <li class="">+11 (000) 111-11-11</li>
-          <li class="">info@devstudio.com</li>
-        </ul>
-       
-      </div> -->
+     <!-- <div class="mobile-menu">
+      <!-- <button class="mobile-menu-close-btn">
+        <svg class="modal-close-icon-menu">
+          <use
+            href="./images/sprite.svg#icon-close-btn"
+            width="8"
+            hight="8"
+          ></use>
+        </svg>
+      </button> --> -->
+     
+     </div>
     </header>  
         <!-- mein -->
     <main>
@@ -158,13 +148,16 @@
           <h2 class="title-secondaru">What are we doing</h2>
           <ul class="list">
             <li class="list-card">
-              <img src="./images/icon1.jpg" alt="comp" width="360" />
+               
+              <img src="./images/icon1.jpg" srcset="./images/icon1.jpg 1x, ./images/icon1-comp@2x.jpg 2x"  alt="comp" width="360" />
             </li>
             <li class="list-card">
-              <img src="./images/icon2.jpg" alt="phon" width="360" />
+              <img src="./images/icon2.jpg" srcset="./images/icon2.jpg 1x, ./images/icon2-comp@2x.jpg 2x"  alt="phon" width="360" />
+              
             </li>
             <li class="list-card">
-              <img src="./images/icon3.jpg" alt="comp&phon" width="360" />
+              <img src="./images/icon3.jpg" srcset="./images/icon3.jpg 1x, ./images/icon3-comp@2x.jpg 2x"  alt="comp&phon" width="360" />
+             
             </li>
           </ul>
         </div>
@@ -175,7 +168,13 @@
           <h2 class="title-secondaru">Our Team</h2>
           <ul class="list team">
             <li>
-              <img src="./images/img1.jpg" alt="Mark Guerrero" width="264" />
+              <picture>
+                <source srcset="./images/img1.jpg 1x, ./images/img1-comp@2x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/tablet/img1-tabl.jpg 1x, ./images/tablet/img1-tabl@2x.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/mobile/img1-mob.jpg 1x, ./images/mobile/img1-mob@2x.jpg 2x" media="(max-width:767px)">
+                <img src="./images/mobile/img1-mob.jpg" alt="Mark Guerrero" width="264" />
+              </picture>
+             
               <div class="card-title container-shawod">
                 <h3 class="title-third">Mark Guerrero</h3>
                 <p class="text text-team">Product Designer</p>
@@ -236,8 +235,13 @@
               </div>
             </li>
             <li>
-              <img src="./images/img2.jpg" alt="Tom Ford" width="264" />
-              <div class="container-shawod card-title">
+              <picture>
+                <source srcset="./images/img2.jpg 1x, ./images/img2-comp@2x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/tablet/img2-tabl.jpg 1x, ./images/tablet/img2-tabl@2x.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/mobile/img2-mob.jpg 1x, ./images/mobile/img2-mob@2x.jpg 2x" media="(max-width:767px)">
+                <img src="./images/mobile/img2-mob.jpg" alt="Tom Ford" width="264" />
+              </picture>
+                        <div class="container-shawod card-title">
                 <h3 class="title-third">Tom Ford</h3>
                 <p class="text text-team">Frontend Developer</p>
                 <ul class="social-list list">
@@ -297,7 +301,14 @@
               </div>
             </li>
             <li>
-              <img src="./images/img3.jpg" alt="Camila Garcia" width="264" />
+              <picture>
+                <source srcset="./images/img3.jpg 1x, ./images/img3-comp@2x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/tablet/img3-tabl.jpg 1x, ./images/tablet/img3-tabl@2x.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/mobile/img3-mob.jpg 1x, ./images/mobile/img3-mob@2x.jpg 2x" media="(max-width:767px)">
+                <img src="./images/mobile/img3-mob.jpg" alt="Camila Garcia" width="264" />
+              </picture>
+             
+              
               <div class="container-shawod card-title">
                 <h3 class="title-third">Camila Garcia</h3>
                 <p class="text text-team">Marketing</p>
@@ -358,8 +369,13 @@
               </div>
             </li>
             <li>
-              <img src="./images/img4.jpg" alt="Daniel Wilson" width="264" />
-              <div class="container-shawod card-title">
+           <picture>
+                <source srcset="./images/img4.jpg 1x, ./images/img4-comp@2x.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/tablet/img4-tabl.jpg 1x, ./images/tablet/img4-tabl@2x.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/mobile/img4-mob.jpg 1x, ./images/mobile/img4-mob@2x.jpg 2x" media="(max-width:767px)">
+                <img src="./images/mobile/img4-mob.jpg" alt="Daniel Wilson" width="264" />
+              </picture>
+                          <div class="container-shawod card-title">
                 <h3 class="title-third">Daniel Wilson</h3>
                 <p class="text text-team">UI Designer</p>
                 <ul class="social-list list">
