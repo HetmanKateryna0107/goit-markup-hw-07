@@ -41,12 +41,13 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobil-menu-open">
+
+        <button type="button" class="mobil-menu-open js-open-menu"  aria-expanded="false">
           <svg class="mobile-menu-open_icon" width="40" height="40">
             <use href="./images/sprite.svg#menu"></use>
           </svg>
-        </button>
-        <address class="">
+        </button> 
+        <address class="heder-address">
           <ul class="list addres">
             <li>
               <a
@@ -64,8 +65,9 @@
           </ul>
         </address>
       </div>
-     <!-- <div class="mobile-menu">
-      <!-- <button class="mobile-menu-close-btn">
+ <div class="mobile-menu js-menu-container" >
+  <div class="container mobile-menu-container ">
+       <button class="mobile-menu-close-btn js-close-menu">
         <svg class="modal-close-icon-menu">
           <use
             href="./images/sprite.svg#icon-close-btn"
@@ -73,21 +75,84 @@
             hight="8"
           ></use>
         </svg>
-      </button> -->
-     
-     </div>
-    </header>  
+      </button>
+      <ul class="list-mevu-text" >
+        <li class="list-menu  menu-text">Studio</li>
+        <li class="list-menu  menu-text">Portfolio</li>
+        <li class="list-menu  menu-text">Contacts</li>
+      </ul>
+      <ul class="adress-menu">
+        <li class="list-menu tel-menu">+11 (000) 111-11-11</li>
+        <li class="list-menu mail-menu">info@devstudio.com</li>
+      </ul>
+      <ul class="social-list-menu list">
+        <li class="social-list-item">
+          <a
+            href=""
+            class="social-list-link"
+            aria-label="linl-for-instsgram"
+            rel="noopener noreferer"
+            target="_blank"
+          >
+            <svg class="social-list-icon" width="16" height="16">
+              <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a
+            href=""
+            class="social-list-link"
+            aria-label="linl-for-twitter"
+            rel="noopener noreferer"
+            target="_blank"
+          >
+            <svg class="social-list-icon" width="16" height="16">
+              <use href="./images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a
+            href=""
+            class="social-list-link"
+            aria-label="linl-for-facebook"
+            rel="noopener noreferer"
+            target="_blank"
+          >
+            <svg class="social-list-icon" width="16" height="16">
+              <use href="./images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a
+            href=""
+            class="social-list-link"
+            aria-label="linl-for-linkedin"
+            rel="noopener noreferer"
+            target="_blank"
+          >
+            <svg class="social-list-icon" width="16" height="16">
+              <use href="./images/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+     </div> 
+        </header>  
         <!-- mein -->
     <main>
       <!--section1 hero -->
-      <section class="hero-color">
+   <section class="hero-color">
         <h1 class="main-title">Effective Solutions for Your Business</h1>
-        <button class="modal-btn" type="button" data-modal-open>
+        <button class="modal-btn js-open-menu" type="button" >
           Order Service
         </button>
-      </section> 
+      </section>  
       <!-- section2 -->
-       <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="title-secondaru hide">Course goal</h2>
           <ul class="course list">
@@ -141,7 +206,7 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>  
       <!-- section3 -->
      <section class="what-are-we-doing-section section remove-retreat">
         <div class="container">
@@ -161,20 +226,16 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
       <!-- section4 -->
-       <section class="section section-four hero-footer">
+      <section class="section section-four hero-footer">
         <div class="container">
           <h2 class="title-secondaru">Our Team</h2>
-          <ul class="list team">
-            <li>
-              <picture>
-                <source srcset="./images/img1.jpg 1x, ./images/img1-comp@2x.jpg 2x" media="(min-width:1200px)">
-                <source srcset="./images/tablet/img1-tabl.jpg 1x, ./images/tablet/img1-tabl@2x.jpg 2x" media="(min-width:768px)">
-                <source srcset="./images/mobile/img1-mob.jpg 1x, ./images/mobile/img1-mob@2x.jpg 2x" media="(max-width:767px)">
-                <img src="./images/mobile/img1-mob.jpg" alt="Mark Guerrero" width="264" />
-              </picture>
-             
+          <ul class="list list-team ">
+            <li class="team">
+             <img src="./images/img1.jpg" alt="Mark Guerrero" 
+             srcset="./images/img1.jpg 1x, ./images/img1-comp@2x.jpg 2x" />
+          
               <div class="card-title container-shawod">
                 <h3 class="title-third">Mark Guerrero</h3>
                 <p class="text text-team">Product Designer</p>
@@ -234,13 +295,11 @@
                 </ul>
               </div>
             </li>
-            <li>
-              <picture>
-                <source srcset="./images/img2.jpg 1x, ./images/img2-comp@2x.jpg 2x" media="(min-width:1200px)">
-                <source srcset="./images/tablet/img2-tabl.jpg 1x, ./images/tablet/img2-tabl@2x.jpg 2x" media="(min-width:768px)">
-                <source srcset="./images/mobile/img2-mob.jpg 1x, ./images/mobile/img2-mob@2x.jpg 2x" media="(max-width:767px)">
-                <img src="./images/mobile/img2-mob.jpg" alt="Tom Ford" width="264" />
-              </picture>
+            <li class="team">
+              <img src="./images/img2.jpg" alt="Tom Ford" 
+              srcset="./images/img2.jpg 1x, ./images/img2-comp@2x.jpg 2x" />
+             
+
                         <div class="container-shawod card-title">
                 <h3 class="title-third">Tom Ford</h3>
                 <p class="text text-team">Frontend Developer</p>
@@ -300,16 +359,11 @@
                 </ul>
               </div>
             </li>
-            <li>
-              <picture>
-                <source srcset="./images/img3.jpg 1x, ./images/img3-comp@2x.jpg 2x" media="(min-width:1200px)">
-                <source srcset="./images/tablet/img3-tabl.jpg 1x, ./images/tablet/img3-tabl@2x.jpg 2x" media="(min-width:768px)">
-                <source srcset="./images/mobile/img3-mob.jpg 1x, ./images/mobile/img3-mob@2x.jpg 2x" media="(max-width:767px)">
-                <img src="./images/mobile/img3-mob.jpg" alt="Camila Garcia" width="264" />
-              </picture>
-             
-              
-              <div class="container-shawod card-title">
+            <li class="team">
+              <img src="./images/img3.jpg" alt="Camila Garcia" 
+              srcset="./images/img3.jpg 1x, ./images/img3-comp@2x.jpg 2x" />
+                                
+                 <div class="container-shawod card-title">
                 <h3 class="title-third">Camila Garcia</h3>
                 <p class="text text-team">Marketing</p>
                 <ul class="social-list list">
@@ -368,13 +422,9 @@
                 </ul>
               </div>
             </li>
-            <li>
-           <picture>
-                <source srcset="./images/img4.jpg 1x, ./images/img4-comp@2x.jpg 2x" media="(min-width:1200px)">
-                <source srcset="./images/tablet/img4-tabl.jpg 1x, ./images/tablet/img4-tabl@2x.jpg 2x" media="(min-width:768px)">
-                <source srcset="./images/mobile/img4-mob.jpg 1x, ./images/mobile/img4-mob@2x.jpg 2x" media="(max-width:767px)">
-                <img src="./images/mobile/img4-mob.jpg" alt="Daniel Wilson" width="264" />
-              </picture>
+            <li class="team">
+              <img src="./images/img4.jpg" alt="Daniel Wilson" 
+              srcset="./images/img4.jpg 1x, ./images/img4-comp@2x.jpg 2x" />
                           <div class="container-shawod card-title">
                 <h3 class="title-third">Daniel Wilson</h3>
                 <p class="text text-team">UI Designer</p>
@@ -436,10 +486,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>  
       <!-- section5 -->
        <section class="section">
-        <div class="container">
+         <div class="container">
           <h2 class="title-fifth">Customers</h2>
           <ul class="company-list list">
             <li class="company-list-item">
@@ -485,7 +535,8 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div> 
+       </section>
     </main>
     <!-- footer -->
     <footer class="footer footer-tel">
@@ -556,10 +607,10 @@
           </span>
         </div>
       </div>
-    </footer>
+    </footer>  
     <!-- ================================================================backdrop================================ -->
     <!-- is-hidden -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-clase-btn" data-modal-close>
           <svg class="modal-close-btn-icon">
@@ -643,7 +694,14 @@
           <button type="submit" class="modal-form-submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="./js/modal-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
