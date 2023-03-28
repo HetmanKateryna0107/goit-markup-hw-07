@@ -150,10 +150,10 @@ img {
   padding-top: 24px;
   display: flex;
   align-items: center;
+  height: 70px;
 }
 
-.box {
-  border-bottom: 1px solid var(--text-footer-color);
+.box {  border-bottom: 1px solid var(--text-footer-color);
   padding-bottom: 25px;
 }
 .page-nav {
@@ -171,6 +171,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
   
 }
 
@@ -260,7 +262,7 @@ img {
   padding: 0;
   line-height: 0;
   margin-left: auto;
- 
+
 }
 
 .mobile-menu{
@@ -289,6 +291,8 @@ img {
   padding: 80px 35px 40px 40px;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  background-color: var(--subtle-text-color);
 
 }
 
@@ -336,8 +340,7 @@ img {
   margin-bottom: 72px;
   }
 
-.footer-social-list-link {
-}
+
 
 
 /*===================================================== section 1 hero =====================================================*/
@@ -486,9 +489,7 @@ letter-spacing: 0.02em;
 color:var(--dark-color);
 margin-bottom: 8px;
 }
-.course-colum{
- margin-bottom: 72px;
-} 
+
 
 .title-course-tel {
   text-align: center;
@@ -605,6 +606,10 @@ color:var(--text-color);
   box-shadow: 0 1px 1px 0 rgba(46, 47, 66, 0.16);
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+.mobile-menu-open_icon{
+width: 32px;
+height: 32px;
+}
 /* =====================================================section 5=====================================================*/
 .title-fifth {
   text-align: center;
@@ -663,7 +668,14 @@ color:var(--text-color);
   width: 264px;
   margin-bottom: 72px;
 
-}
+
+align-items: center;}
+
+  .course-colum:not(:last-child){
+ 
+    margin-bottom: 72px;
+   } 
+
 
 .title-third-footer {
   margin-bottom: 17px;
@@ -1159,6 +1171,8 @@ color:var(--text-color);
 }
 
 
+
+
 @media screen and (min-width: 768px) {
  
  
@@ -1183,14 +1197,20 @@ color:var(--text-color);
   .page-header{
     padding-top: 0;
     padding-bottom: 0;
+    height: 72px;
   }
- 
+
   .text-footer {
   
     margin-bottom: 0;
   
+
   }
-  
+
+  .course-colum:not(:last-child){
+    margin-bottom: 0px;
+   } 
+ 
   .title-third-footer {
    
     text-align: start;
@@ -1311,6 +1331,7 @@ color:var(--text-color);
       justify-content:center;
       align-items: start;
     }
+  
   }
 
   
@@ -1336,6 +1357,19 @@ color:var(--text-color);
   
   
   }
+  .course-colum{
+    margin: bottom 0;
+
+  }
+  .text-footer {
+  
+    margin-bottom: 0;
+  
+
+  }
+   .course-colum:not(:last-child){
+    margin-bottom: 0px;
+   } 
   .page-header{
     padding-top: 0;
     padding-bottom: 0;
@@ -1345,6 +1379,8 @@ color:var(--text-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
+
     
   }
   .logo-left{
@@ -1480,6 +1516,7 @@ color:var(--text-color);
 .page-header {
   display: flex;
   align-items: center;
+  height: 72px;
   }
 .addres {
   display: flex;
