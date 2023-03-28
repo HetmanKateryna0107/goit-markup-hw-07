@@ -118,6 +118,12 @@ img {
 /*===================================================== hader===================================================== */
 
 /* nav */
+.page-header {
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
 
 .section {
   padding-top: 96px;
@@ -146,12 +152,6 @@ img {
 }
 
 
-.page-header {
-  padding-top: 24px;
-  display: flex;
-  align-items: center;
-  height: 70px;
-}
 
 .box {  border-bottom: 1px solid var(--text-footer-color);
   padding-bottom: 25px;
@@ -1509,17 +1509,17 @@ margin-right: auto;
       margin-right: 24px;
       margin-bottom: 72px;
     }
-    
+    .page-header {
+      display: flex;
+      align-items: center;
+      height: 72px;
+      }
    
   }
 
 
 
-.page-header {
-  display: flex;
-  align-items: center;
-  height: 72px;
-  }
+
 .addres {
   display: flex;
   align-items: center;
