@@ -667,9 +667,11 @@ height: 32px;
   color: var(--text-footer-color);
   width: 264px;
   margin-bottom: 72px;
-
-
-align-items: center;}
+align-items: center;
+display: block;
+margin-left:auto ;
+margin-right: auto;
+}
 
   .course-colum:not(:last-child){
  
